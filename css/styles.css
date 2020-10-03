@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 10vh;
+  width: 100%;
+  position: fixed;
+  background: #333;
+  box-shadow: 1px 1px 5px #f97617, inset 0px -1px 5px #333;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 1.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #333;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(120deg, #f97617, #ed4950);
+  border-radius: 1rem;
+  box-shadow: inset #6f7473 -1px -1px 1px, #4d4d4d 1px 1px 1px;
+  transition: 1s ease-in-out;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #630358, #ed4950);
+  transition: 1s ease-in-out;
+}
+
+.logo a {
+  padding: 1rem;
+  background: linear-gradient(#f97617, #ed4950);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font: 3rem "Odachi", sans-serif;
+  letter-spacing: 1rem;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-items: flex-end;
+  list-style: none;
+}
+
+li {
+  padding: 2rem;
+}
+.nav-items {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  font: 2rem "Google Sans Regular", sans-serif;
+}
+
+li.active > a {
+  background: linear-gradient(#f97617, #ed4950);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 0.5s;
+}
+
+.to-top {
+  bottom: 0;
+  right: 0;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  background: linear-gradient(#f97617, #ed4950);
+  transition: 1s ease-in-out;
+  border: #333 solid 3px;
+}
+
+.to-top:hover {
+  background: linear-gradient(180deg, #630358, #ed4950);
+  border-radius: 10%;
+  transition: 1s ease-in-out;
+}
+
+.to-top i {
+  font-size: 3rem;
+  position: relative;
+  transform: translate(30%, 20%);
+  color: white;
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  min-height: 100vh;
+  background-color: #eeeeee;
+}
+
+#bio {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 100vh;
+  background-color: #32e0c4;
+}
+
+#skills {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 100vh;
+  background-color: #0d7377;
+}
+
+#git {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 100vh;
+  background-color: #212121;
+}
